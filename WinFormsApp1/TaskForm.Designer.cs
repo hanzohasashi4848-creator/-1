@@ -36,9 +36,9 @@
             labelInfo.AutoSize = true;
             labelInfo.Location = new Point(126, 24);
             labelInfo.Name = "labelInfo";
-            labelInfo.Size = new Size(38, 15);
+            labelInfo.Size = new Size(50, 15);
             labelInfo.TabIndex = 0;
-            labelInfo.Text = "label1";
+            labelInfo.Text = "label111";
             // 
             // TaskForm
             // 
