@@ -9,7 +9,7 @@ namespace WinFormsApp1
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            // проверка фамилии
+            
             if (textBoxSurname.Text.Length == 0)
             {
                 MessageBox.Show("Не введена фамилия");
@@ -17,8 +17,8 @@ namespace WinFormsApp1
             }
 
             TaskForm tf = new TaskForm(
-                textBoxSurname.Text,     // <-- исправили
-                comboBoxClass.Text,      // <-- исправили
+                textBoxSurname.Text,     
+                comboBoxClass.Text,      
                 numericUpDownCount.Value,
                 radioButtonHard.Checked
             );

@@ -11,10 +11,10 @@ namespace WinFormsApp1
         {
             InitializeComponent();
 
-            // включаем прокрутку
+           
             this.AutoScroll = true;
 
-            // информация об ученике
+            
             labelInfo.Text = "Ученик: " + surname + "\nКласс: " + clas;
 
             int n = (int)count;
@@ -23,7 +23,7 @@ namespace WinFormsApp1
 
             for (int i = 0; i < n; i++)
             {
-                // текст вопроса
+                
                 Label question = new Label();
                 question.Text = "Вопрос " + (i + 1);
                 question.Location = new Point(20, 50 + i * 35);
@@ -33,7 +33,7 @@ namespace WinFormsApp1
 
                 if (isHard)
                 {
-                    // сложный вариант — ComboBox
+                    
                     ComboBox cb = new ComboBox();
                     cb.Location = new Point(150, 50 + i * 35);
 
@@ -45,7 +45,7 @@ namespace WinFormsApp1
                 }
                 else
                 {
-                    // простой вариант — CheckBox
+                    
                     CheckBox ch = new CheckBox();
                     ch.Text = "Ответ";
                     ch.Location = new Point(150, 50 + i * 35);
